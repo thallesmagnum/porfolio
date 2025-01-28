@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
+/* main{
+    padding: 300px 0 0 0;
+} */
 
 body {
     background-color: #f8f8ff;
@@ -49,8 +55,14 @@ h2.titulo {
 /*Header Style*******************************************************************************************/
 header {
     padding: 40px 4%;
-}
+    /* width: 100%; */
+    /* box-shadow: 0 0 10px #88888836; */
+    }
 
+.logo img{
+    position: fixed;
+    z-index: 99999;
+}
 header>.interface {
     display: flex;
     align-items: center;
@@ -66,6 +78,7 @@ header nav ul li a {
     font-weight: 500;
 
 }
+
 
 header nav.menu-desktop a:hover {
     color: #888;
@@ -145,7 +158,8 @@ header nav.menu-desktop ul li {
 
 /*Top style*********************************************************************************************/
 section .topo {
-    padding: 40px 4%;
+    padding: 80px 4%;   
+    
 }
 
 section.topo .flex {
@@ -157,9 +171,9 @@ section.topo .flex {
 .topo .txt-topo h1 {
     color: #333;
     font-size: 40px;
+    /* padding: 350px 0 0; */
 
 }
-
 .topo .txt-topo p {
     color: #333;
     margin: 30px 0;
@@ -173,6 +187,7 @@ section.topo .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
     box-shadow: 0px 0px 15px #0675bbf1;
     border-radius: 50%;
+    
 }
 
 @keyframes flutuar {
@@ -305,6 +320,10 @@ section.portfolio .flex {
     opacity: 0;
     transition: .6s;
 }
+.overlay a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .overlay:hover {
     opacity: 1;
@@ -396,6 +415,9 @@ footer .line-footer p a {
     }
 
     /* header */
+    header {
+        background-color: transparent;
+    }
     .menu-desktop,
     .btn-contato {
         display: none;
@@ -416,6 +438,7 @@ footer .line-footer p a {
 
     .topo .txt-topo h1 {
         font-size: 30px;
+        padding: 20px;
 
     }
 
