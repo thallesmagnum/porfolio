@@ -356,18 +356,18 @@ form textarea {
     color: #444;
     font-size: 20px;
 }
-
+/* 
 form textarea {
     resize: none;
     height: 200px;
-}
+} */
 
-form .btn-enviar {
+div .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-enviar input {
+.btn-enviar button {
     width: 200px;
     background-color: #2f88da;
     color: #fff;
